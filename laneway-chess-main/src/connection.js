@@ -5,10 +5,10 @@ const app = express();
 
 // Create a MySQL connection
 const connection = mysql.createConnection({
-  host: 'databasechess.c38qkeam6cgq.ap-southeast-2.rds.amazonaws.com', // Replace with your host
-  user: 'admin',      // Replace with your MySQL username
-  password: 'eKp8WdTK8z6EALV',      // Replace with your MySQL password
-  database: 'databasechess', // Replace with your database name
+  host: 'databasechess.c38qkeam6cgq.ap-southeast-2.rds.amazonaws.com',
+  user: 'admin',     
+  password: 'eKp8WdTK8z6EALV',    
+  database: 'databasechess', 
   connectTimeout: 20000
 });
 
@@ -21,7 +21,7 @@ connection.connect((err) => {
   console.log('Connected to MySQL');
 });
 
-// Example API endpoint
+// API endpoint
 app.get('/users', (req, res) => {
   connection.query('SELECT * FROM users', (err, results) => {
     if (err) {

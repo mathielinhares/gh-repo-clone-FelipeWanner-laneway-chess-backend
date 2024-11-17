@@ -42,7 +42,7 @@ const GameModeSelector = () => {
           />
         </div>
 
-        {/* Timer container */}
+        {/*Timer container*/}
         <div className="w-60 pl-4 flex flex-col justify-evenly">
           {gameMode === 'blitz' ? <BlitzTimer /> : <ChessTimer />}
         </div>

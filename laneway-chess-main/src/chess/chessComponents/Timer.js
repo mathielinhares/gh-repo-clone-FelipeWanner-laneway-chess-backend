@@ -52,7 +52,7 @@ const ChessTimer = () => {
     }
   };
 
-  // Stop all timers (useful for cleanup)
+  // Stop all timers
   const stopAllTimers = () => {
     clearInterval(player1IntervalRef.current);
     clearInterval(player2IntervalRef.current);

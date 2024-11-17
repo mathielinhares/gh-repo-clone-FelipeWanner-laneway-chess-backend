@@ -58,7 +58,7 @@ const BlitzTimer = () => {
   };
 
   useEffect(() => {
-    startTimer(1); // Start Player 1's timer at the beginning
+    startTimer(1); //Start Player 1's timer at the beginning
     return () => {
       clearInterval(player1IntervalRef.current);
       clearInterval(player2IntervalRef.current);
