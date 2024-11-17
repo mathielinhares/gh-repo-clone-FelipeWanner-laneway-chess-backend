@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ChessTimer from './ChessTimer'; // Your normal timer component
+import ChessTimer from './Timer'; // Your normal timer component
 import BlitzTimer from './BlitzTimer'; // Your blitz timer component
 import Chessboard from './Chessboard'; // Assuming you're using a chessboard library
 

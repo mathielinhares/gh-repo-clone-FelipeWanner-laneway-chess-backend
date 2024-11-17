@@ -25,7 +25,6 @@ const ChessTimer = () => {
         setPlayer1Time((prev) => {
           if (prev <= 0) {
             clearInterval(player1IntervalRef.current);
-            alert("Player 1's time is up!");
             return 0;
           }
           return prev - 1;
@@ -36,7 +35,6 @@ const ChessTimer = () => {
         setPlayer2Time((prev) => {
           if (prev <= 0) {
             clearInterval(player2IntervalRef.current);
-            alert("Player 2's time is up!");
             return 0;
           }
           return prev - 1;
